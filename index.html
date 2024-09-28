@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tracker App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="welcomeScreen" class="welcome-screen">
+        <div class="electric-animation"></div>
+        <h1>Welcome</h1>
+        <p>This app is made by Ahmed Minhaz</p>
+    </div>
+
+    <div class="container hidden" id="mainContent">
+        <!-- Your existing app content goes here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tracker App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Health Tracker App 🌟</h1>
+        <button id="aboutButton" class="button">About</button>
+        <button id="bmiButton" class="button">BMI</button>
+        <button id="dietButton" class="button">Diet Tracker</button>
+        <button id="lungButton" class="button">Lung Capacity Check</button>
+
+        <div id="aboutInfo" class="hidden">
+            <h2>About the Programmer</h2>
+            <p><strong>Name:</strong> Minhaz</p>
+            <p><strong>Age:</strong> 18</p>
+            <p><strong>Country:</strong> Bangladesh</p>
+            <button onclick="window.location.href='mailto:minhazceo@gmail.com'" class="email-button">Email Me</button>
+            <button onclick="window.open('https://www.facebook.com/minhaz.info404', '_blank')" class="facebook-button">Facebook</button>
+        </div>
+
+        <div id="bmiSection" class="hidden">
+            <h2>Health Tracker 🏃‍♂️</h2>
+            <input type="number" id="weight" placeholder="Enter weight (kg)" class="input-field">
+            <input type="number" id="height" placeholder="Enter height (cm)" class="input-field">
+            <button onclick="calculateBMI()" class="button">Calculate BMI</button>
+            <p id="bmiResult" class="result"></p>
+            <div id="bmiEmoji" class="emoji"></div>
+            <p id="bmiTips" class="tips"></p>
+        </div>
+
+        <div id="dietSection" class="hidden">
+            <h2>Diet Tracker 🍎</h2>
+            <input type="text" id="foodItem" placeholder="Enter food item" class="input-field">
+            <input type="number" id="calories" placeholder="Enter calories" class="input-field">
+            <button onclick="addFood()" class="button">Add Food</button>
+            <ul id="foodList"></ul>
+        </div>
+
+        <div id="lungTestSection" class="hidden">
+            <h2>Lung Health Test 🌬️</h2>
+            <button id="startLungTest" class="button">Start Lung Capacity Check</button>
+            <div id="lungGame" class="hidden">
+                <h3>Follow the Instructions</h3>
+                <div id="lungInstructions" class="instructions"></div>
+                <button id="inhaleButton" class="button hidden">Inhale</button>
+                <button id="holdButton" class="button hidden">Hold</button>
+                <button id="exhaleButton" class="button hidden">Exhale</button>
+                <p id="lungHealthResult" class="result"></p>
+                <button id="restartButton" class="button hidden">Restart Test</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
